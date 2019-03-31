@@ -7,7 +7,7 @@ import { Aluno } from '../alunos/pessoa';
 })
 export class PessoasService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   lista(){
     return this.http.get<Aluno[]>('http://gilsonpolito-api.herokuapp.com/alunos');
