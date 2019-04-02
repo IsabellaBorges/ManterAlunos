@@ -16,7 +16,7 @@ export class EscolhaPage implements OnInit {
   ngOnInit() {
     this.activatedRoute.queryParams
       .subscribe(params =>{
-        let aluno= <Aluno>JSON.parse(params['Alunoselecionado']);
+        let aluno= <Aluno>JSON.parse(params['alunoselecionado']);
 
         console.log("O aluno que chegou na pagina de escolha é: " + aluno.nome );
       });
